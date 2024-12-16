@@ -46,28 +46,30 @@ class SignupViewBody extends StatelessWidget {
         child: Column(
           children: [
             const CustomHeader(
-              title: 'BLOOD BANK',
-              subtitle: 'Create your account',
+              subtitle: 'Let\'s create your account!',
             ),
             const SizedBox(height: 20),
             const SignupForm(),
             const SizedBox(height: 30),
-            const Row(
-              children: [
-                Expanded(
-                  child: Divider(
-                    thickness: 2,
-                    color: AppColors.primaryColor,
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 12),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Divider(
+                      thickness: 1.2,
+                      color: AppColors.primaryColor,
+                    ),
                   ),
-                ),
-                Text(' or continue with '),
-                Expanded(
-                  child: Divider(
-                    thickness: 2,
-                    color: AppColors.primaryColor,
+                  Text(' or continue with '),
+                  Expanded(
+                    child: Divider(
+                      thickness: 1.2,
+                      color: AppColors.primaryColor,
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
             const SizedBox(height: 16),
             const Row(
@@ -93,7 +95,7 @@ class SignupViewBody extends StatelessWidget {
                     Navigator.pop(context);
                   },
                   child: const Text(
-                    'Sigin Now',
+                    'Sign In',
                     style: TextStyle(color: AppColors.primaryColor),
                   ),
                 )

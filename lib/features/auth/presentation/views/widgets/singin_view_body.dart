@@ -43,10 +43,9 @@ class SigninViewBody extends StatelessWidget {
       child: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(height: MediaQuery.of(context).size.height * 0.1),
+            SizedBox(height: MediaQuery.of(context).size.height * 0.05),
             const CustomHeader(
-              title: 'BLOOD BANK',
-              subtitle: 'Welcome Back!',
+              subtitle: 'Welcome Back',
             ),
             const SizedBox(
               height: 20,
@@ -59,7 +58,7 @@ class SigninViewBody extends StatelessWidget {
               onTap: () {
                 Navigator.of(context).pushNamed(RoutesName.register);
               },
-              text1: 'NotAmember!',
+              text1: 'Not a member ?',
               text2: 'signup',
             )
           ],

@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:graduation_project/core/utils/app_colors.dart';
 
 class CustomHeader extends StatelessWidget {
-  final String title;
+  final String? title;
   final String subtitle;
 
   const CustomHeader({
     super.key,
-    required this.title,
+    this.title,
     required this.subtitle,
   });
 
@@ -17,7 +17,7 @@ class CustomHeader extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
-          title,
+          title ?? '',
           style: const TextStyle(
             fontFamily: 'Montserrat',
             color: AppColors.primaryColor, // استخدم اللون الأساسي هنا

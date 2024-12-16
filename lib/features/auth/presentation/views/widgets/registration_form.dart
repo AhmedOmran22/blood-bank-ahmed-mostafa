@@ -4,11 +4,12 @@ import 'package:graduation_project/core/utils/app_colors.dart';
 import 'package:graduation_project/core/widgets/square_image_logo.dart';
 
 class RegistrationForm extends StatelessWidget {
-  const RegistrationForm(
-      {super.key,
-      required this.text1,
-      required this.text2,
-      required this.onTap});
+  const RegistrationForm({
+    super.key,
+    required this.text1,
+    required this.text2,
+    required this.onTap,
+  });
   final String text1;
   final String text2;
   final VoidCallback onTap;
@@ -16,22 +17,25 @@ class RegistrationForm extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const Row(
-          children: [
-            Expanded(
-              child: Divider(
-                thickness: 2,
-                color: AppColors.primaryColor,
+        const Padding(
+          padding: EdgeInsets.symmetric(horizontal: 12),
+          child: Row(
+            children: [
+              Expanded(
+                child: Divider(
+                  thickness: 1.2,
+                  color: AppColors.primaryColor,
+                ),
               ),
-            ),
-            Text(' or continue with '),
-            Expanded(
-              child: Divider(
-                thickness: 2,
-                color: AppColors.primaryColor,
+              Text(' or continue with '),
+              Expanded(
+                child: Divider(
+                  thickness: 1.2,
+                  color: AppColors.primaryColor,
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
         const SizedBox(
           height: 16,

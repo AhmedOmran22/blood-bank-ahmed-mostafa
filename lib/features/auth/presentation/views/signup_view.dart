@@ -12,7 +12,7 @@ class SignUpView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const CustomAppBar(title: 'signup'),
+      appBar: const CustomAppBar(title: 'sign up'),
       body: BlocProvider(
         create: (context) => SignupCubit(getIt<AuthRepo>()),
         child: const SignupViewBody(),

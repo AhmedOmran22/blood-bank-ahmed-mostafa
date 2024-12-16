@@ -12,7 +12,7 @@ class SignInView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const CustomAppBar(title: 'signin'),
+      appBar: const CustomAppBar(title: 'Login'),
       body: BlocProvider(
         create: (context) => SigninCubit(
           getIt<AuthRepo>(),
