@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:graduation_project/core/routes/routes_name.dart';
 import 'package:graduation_project/core/widgets/custom_allneeds_container.dart';
+import 'package:graduation_project/features/home/presentation/views/widgets/custom_floating_action_button.dart';
 
 class AllneedsView extends StatelessWidget {
   const AllneedsView({super.key});
@@ -18,7 +19,6 @@ class AllneedsView extends StatelessWidget {
             text: 'Needed Blood ',
             ontab: () {
               Navigator.pushNamed(context, RoutesName.needsblood);
-              
             },
           ),
           const SizedBox(
@@ -41,6 +41,7 @@ class AllneedsView extends StatelessWidget {
           ),
         ],
       ),
+      floatingActionButton: const CustomFloatingActionBouttun(),
     );
   }
 }

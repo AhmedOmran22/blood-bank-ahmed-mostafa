@@ -3,6 +3,7 @@ import 'package:graduation_project/core/utils/app_assets.dart';
 import 'package:graduation_project/core/widgets/custom_app_bar.dart';
 import 'package:graduation_project/core/widgets/custom_button.dart';
 import 'package:graduation_project/core/widgets/custom_drop_tybe_blood.dart';
+import 'package:graduation_project/features/home/presentation/views/widgets/custom_floating_action_button.dart';
 
 class CustomNeededplasma extends StatelessWidget {
   const CustomNeededplasma({super.key});
@@ -67,6 +68,7 @@ class CustomNeededplasma extends StatelessWidget {
           ],
         ),
       ),
+      floatingActionButton: const CustomFloatingActionBouttun(),
     );
   }
 }

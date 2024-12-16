@@ -4,6 +4,8 @@ import 'package:graduation_project/core/widgets/custom_app_bar.dart';
 import 'package:graduation_project/core/widgets/custom_button.dart';
 import 'package:graduation_project/core/widgets/custom_drop_tybe_blood.dart';
 
+import 'custom_floating_action_button.dart';
+
 class CustomNeededBlood extends StatelessWidget {
   const CustomNeededBlood({super.key});
 
@@ -50,7 +52,7 @@ class CustomNeededBlood extends StatelessWidget {
               ),
             ),
             CustomDropdown(
-               hintText: 'location',
+              hintText: 'location',
               items: const [
                 'Blood Bank  Smouhab',
                 'Blood Bank  Alexandria',
@@ -67,6 +69,7 @@ class CustomNeededBlood extends StatelessWidget {
           ],
         ),
       ),
+      floatingActionButton: const CustomFloatingActionBouttun(),
     );
   }
 }

@@ -4,6 +4,8 @@ import 'package:graduation_project/core/widgets/custom_app_bar.dart';
 import 'package:graduation_project/core/widgets/custom_button.dart';
 import 'package:graduation_project/core/widgets/custom_drop_tybe_blood.dart';
 
+import 'custom_floating_action_button.dart';
+
 class NeededBloodPlatelets extends StatelessWidget {
   const NeededBloodPlatelets({super.key});
 
@@ -18,7 +20,7 @@ class NeededBloodPlatelets extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Padding(
-              padding: const EdgeInsets.only(top: 35, left: 30),
+              padding: EdgeInsets.only(top: 35, left: 30),
               child: Text(
                 'Platelets type',
                 style: TextStyle(fontWeight: FontWeight.w400, fontSize: 14),
@@ -67,6 +69,7 @@ class NeededBloodPlatelets extends StatelessWidget {
           ],
         ),
       ),
+      floatingActionButton: const CustomFloatingActionBouttun(),
     );
   }
 }

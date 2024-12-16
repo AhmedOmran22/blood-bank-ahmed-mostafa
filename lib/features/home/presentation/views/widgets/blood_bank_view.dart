@@ -4,6 +4,8 @@ import 'package:graduation_project/core/utils/app_assets.dart';
 import 'package:graduation_project/core/widgets/custom_container.dart';
 import 'package:graduation_project/core/widgets/custom_drawer.dart';
 
+import 'custom_floating_action_button.dart';
+
 class BloodBanks extends StatelessWidget {
   const BloodBanks({super.key});
 
@@ -35,7 +37,7 @@ class BloodBanks extends StatelessWidget {
             children: [
               CustomContainer(
                 imagePath: AppAssets.banks,
-                text: 'Blood Bank Smouhab',
+                text: 'Blood Bank Smouha',
                 ontab: () {
                   Navigator.pushNamed(context, RoutesName.allneeds);
                 },
@@ -79,6 +81,7 @@ class BloodBanks extends StatelessWidget {
           )
         ],
       ),
+      floatingActionButton: const CustomFloatingActionBouttun(),
     );
   }
 }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:graduation_project/features/auth/presentation/manager/signin_cubit/singin_cubit.dart';
 
+import '../../../../../core/routes/routes_name.dart';
 import '../../../../../core/widgets/custom_button.dart';
 import '../../../../../core/widgets/custom_text_field.dart';
 
@@ -61,12 +62,16 @@ class _SigninFormState extends State<SigninForm> {
           const SizedBox(
             height: 20,
           ),
-          const Row(
+          Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 16),
-                child: Text('Forget Password?'),
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: GestureDetector(
+                    onTap: () {
+                      Navigator.pushNamed(context, RoutesName.foregetPassword);
+                    },
+                    child: const Text('Forget Password?')),
               )
             ],
           ),

@@ -8,9 +8,8 @@ abstract class RoutesName {
   static const allneeds = 'allneeds';
   static const bloodbank = 'bloodbak';
   static const homebody = 'homebody';
-    static const prefile = 'prefile';
-
-
+  static const prefile = 'prefile';
+  static const chatBot = 'chatBot';
   static const neededbloodplasma = 'neededbloodplasma';
   static const neededbloodplatelets = 'neededbloodplatelets';
   static const registerOrLogin = 'registerOrLogin';

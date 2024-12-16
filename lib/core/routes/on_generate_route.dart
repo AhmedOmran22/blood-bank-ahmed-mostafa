@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:graduation_project/core/routes/routes_name.dart';
 import 'package:graduation_project/features/auth/presentation/views/forget_password_view.dart';
+import 'package:graduation_project/features/home/presentation/views/chat_bot_view.dart';
 import 'package:graduation_project/features/home/presentation/views/profile_view.dart';
 import 'package:graduation_project/features/auth/presentation/views/signin_view.dart';
 import 'package:graduation_project/features/auth/presentation/views/signup_view.dart';
@@ -54,6 +55,8 @@ Route<dynamic> onGenerateRoutes(RouteSettings settings) {
     case RoutesName.neededbloodplasma:
       return MaterialPageRoute(
           builder: (context) => const CustomNeededplasma());
+    case RoutesName.chatBot:
+      return MaterialPageRoute(builder: (context) => const ChatBotView());
     default:
       return MaterialPageRoute(
         builder: (context) => const Scaffold(
