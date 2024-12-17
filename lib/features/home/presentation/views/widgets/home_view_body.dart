@@ -7,30 +7,28 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Padding(
-        padding: const EdgeInsets.only(top: 60),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Image.asset(
-                  AppAssets.imagesBro,
-                ),
-              ],
-            ),
-            const SizedBox(
-              height: 50,
-            ),
-            const Center(child: Text('choose which one do you prefer')),
-            const SizedBox(height: 100),
-            const Center(
-              child: HomeViewContainer(),
-            ),
-          ],
-        ),
+    return Padding(
+      padding: const EdgeInsets.only(top: 60),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image.asset(
+                AppAssets.imagesBro,
+              ),
+            ],
+          ),
+          const SizedBox(
+            height: 50,
+          ),
+          const Center(child: Text('choose which one do you prefer')),
+          const SizedBox(height: 100),
+          const Center(
+            child: HomeViewContainer(),
+          ),
+        ],
       ),
     );
   }

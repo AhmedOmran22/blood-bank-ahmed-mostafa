@@ -23,7 +23,7 @@ class CustomNeededBlood extends StatelessWidget {
               padding: EdgeInsets.only(top: 35, left: 30),
               child: Text(
                 'Blood type',
-                style: TextStyle(fontWeight: FontWeight.w400, fontSize: 14),
+                style: TextStyle(fontWeight: FontWeight.w500, fontSize: 14),
               ),
             ),
             Padding(
@@ -34,7 +34,7 @@ class CustomNeededBlood extends StatelessWidget {
               padding: EdgeInsets.only(top: 35, left: 30),
               child: Text(
                 'Blood unit Needed',
-                style: TextStyle(fontWeight: FontWeight.w400, fontSize: 14),
+                style: TextStyle(fontWeight: FontWeight.w500, fontSize: 14),
               ),
             ),
             CustomDropdown(
@@ -42,15 +42,16 @@ class CustomNeededBlood extends StatelessWidget {
               onChanged: (value) {},
             ),
             const Padding(
-              padding: EdgeInsets.only(top: 35, left: 30),
+              padding: EdgeInsets.only(top: 20, left: 30),
               child: Text(
                 'Location',
                 style: TextStyle(
-                  fontWeight: FontWeight.w400,
+                  fontWeight: FontWeight.w500,
                   fontSize: 14,
                 ),
               ),
             ),
+
             CustomDropdown(
               hintText: 'location',
               items: const [
@@ -58,6 +59,27 @@ class CustomNeededBlood extends StatelessWidget {
                 'Blood Bank  Alexandria',
                 'Blood Bank Manshiya',
                 'Blood Bank Mandara',
+              ],
+              onChanged: (value) {},
+            ),
+            const Padding(
+              padding: EdgeInsets.only(top: 20, left: 30),
+              child: Text(
+                'how much blood ?',
+                style: TextStyle(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 14,
+                ),
+              ),
+            ),
+
+            CustomDropdown(
+              hintText: 'how much blood you need ?',
+              items: const [
+                '1 bag',
+                '2 bag',
+                '3 bag ',
+                '4 bag',
               ],
               onChanged: (value) {},
             ),

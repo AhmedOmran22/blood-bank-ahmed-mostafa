@@ -17,7 +17,7 @@ class BloodBanks extends StatelessWidget {
         leading: Builder(
           builder: (BuildContext context) {
             return IconButton(
-              icon: const Icon(Icons.menu_open),
+              icon: const Icon(Icons.menu_sharp),
               onPressed: () {
                 Scaffold.of(context).openDrawer();
               },
@@ -29,7 +29,10 @@ class BloodBanks extends StatelessWidget {
       body: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
+            padding: const EdgeInsets.symmetric(
+              vertical: 20,
+              horizontal: 40,
+            ),
             child: Image.asset(AppAssets.imagesthinkher),
           ),
           Row(
@@ -37,17 +40,17 @@ class BloodBanks extends StatelessWidget {
             children: [
               CustomContainer(
                 imagePath: AppAssets.banks,
-                text: 'Blood Bank Smouha',
+                text: 'Blood Bank\n Smouha',
                 ontab: () {
                   Navigator.pushNamed(context, RoutesName.allneeds);
                 },
               ),
               const SizedBox(
-                width: 60,
+                width: 30,
               ),
               CustomContainer(
                 imagePath: AppAssets.banks,
-                text: 'Blood Bank Alexandria',
+                text: 'Blood Bank\n Alexandria',
                 ontab: () {
                   Navigator.pushNamed(context, RoutesName.allneeds);
                 },
@@ -55,24 +58,24 @@ class BloodBanks extends StatelessWidget {
             ],
           ),
           const SizedBox(
-            height: 50,
+            height: 30,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CustomContainer(
                 imagePath: AppAssets.banks,
-                text: 'Blood Bank Manshiya',
+                text: 'Blood Bank\n Manshiya',
                 ontab: () {
                   Navigator.pushNamed(context, RoutesName.allneeds);
                 },
               ),
               const SizedBox(
-                width: 60,
+                width: 30,
               ),
               CustomContainer(
                 imagePath: AppAssets.banks,
-                text: 'Blood Bank Mandara',
+                text: 'Blood Bank\n Mandara',
                 ontab: () {
                   Navigator.pushNamed(context, RoutesName.allneeds);
                 },

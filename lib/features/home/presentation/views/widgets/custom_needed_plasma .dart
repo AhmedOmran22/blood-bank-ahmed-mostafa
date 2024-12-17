@@ -12,7 +12,7 @@ class CustomNeededplasma extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const CustomAppBar(
-        title: 'NeededBloodPlatelets ',
+        title: 'Needed Blood plasma ',
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -41,7 +41,7 @@ class CustomNeededplasma extends StatelessWidget {
               onChanged: (value) {},
             ),
             const Padding(
-              padding: EdgeInsets.only(top: 35, left: 30),
+              padding: EdgeInsets.only(top: 20, left: 30),
               child: Text(
                 'Location',
                 style: TextStyle(
@@ -61,6 +61,31 @@ class CustomNeededplasma extends StatelessWidget {
               onChanged: (value) {},
             ),
             // const CustomTextFiledCircle(),
+            const SizedBox(
+              height: 20,
+            ),
+            const Padding(
+              padding: EdgeInsets.only(top: 10, left: 30),
+              child: Text(
+                'how much plasma ?',
+                style: TextStyle(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 14,
+                ),
+              ),
+            ),
+
+            CustomDropdown(
+              hintText: 'how much blood you need ?',
+              items: const [
+                '1 bag',
+                '2 bag',
+                '3 bag ',
+                '4 bag',
+              ],
+              onChanged: (value) {},
+            ),
+            // CustomTextFiledCircle(),
             const SizedBox(
               height: 20,
             ),
