@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:graduation_project/core/utils/app_assets.dart';
 import 'package:graduation_project/core/utils/app_colors.dart';
 import 'package:graduation_project/core/widgets/square_image_logo.dart';
@@ -40,18 +41,39 @@ class RegistrationForm extends StatelessWidget {
         const SizedBox(
           height: 16,
         ),
-        const Row(
+        Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SqureImage(imagepath: AppAssets.imagesGoogleLogo),
-            SizedBox(
+            IconButton(
+              onPressed: () {},
+              icon: const Icon(
+                Icons.facebook_outlined,
+                color: Color.fromARGB(255, 12, 78, 132),
+                size: 60,
+              ),
+            ),
+            const SizedBox(
               width: 16,
             ),
-            SqureImage(imagepath: AppAssets.imagesFacebookLogo),
-            SizedBox(
+            IconButton(
+              onPressed: () {},
+              icon: const Icon(
+                FontAwesomeIcons.google,
+                color: Colors.black,
+                size: 60,
+              ),
+            ),
+            const SizedBox(
               width: 16,
             ),
-            SqureImage(imagepath: AppAssets.imagesAppleLogo),
+            IconButton(
+              onPressed: () {},
+              icon: const Icon(
+                FontAwesomeIcons.apple,
+                color: Colors.black,
+                size: 60,
+              ),
+            ),
           ],
         ),
         const SizedBox(

@@ -8,9 +8,8 @@ class HomeViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 60),
+      padding: const EdgeInsets.only(top: 80),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -21,10 +20,18 @@ class HomeViewBody extends StatelessWidget {
             ],
           ),
           const SizedBox(
-            height: 50,
+            height: 20,
           ),
-          const Center(child: Text('choose which one do you prefer')),
-          const SizedBox(height: 100),
+          const Center(
+              child: Text(
+            'choose which one do you prefer',
+            style: TextStyle(
+              color: Colors.black,
+              fontSize: 20,
+              fontWeight: FontWeight.w500,
+            ),
+          )),
+          const SizedBox(height: 50),
           const Center(
             child: HomeViewContainer(),
           ),

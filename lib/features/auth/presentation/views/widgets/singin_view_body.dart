@@ -43,7 +43,7 @@ class SigninViewBody extends StatelessWidget {
       child: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(height: MediaQuery.of(context).size.height * 0.05),
+            SizedBox(height: MediaQuery.of(context).size.height * 0.02),
             const CustomHeader(
               subtitle: 'Welcome Back',
             ),
