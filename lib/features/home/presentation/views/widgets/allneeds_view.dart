@@ -13,7 +13,7 @@ class AllneedsView extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const SizedBox(
-            height: 30,
+            height: 40,
           ),
           CustomAllneedsContainer(
             text: 'Needed Blood ',
@@ -22,7 +22,7 @@ class AllneedsView extends StatelessWidget {
             },
           ),
           const SizedBox(
-            height: 30,
+            height: 20,
           ),
           CustomAllneedsContainer(
             text: ' Needed Blood platelets',
@@ -31,7 +31,7 @@ class AllneedsView extends StatelessWidget {
             },
           ),
           const SizedBox(
-            height: 30,
+            height: 20,
           ),
           CustomAllneedsContainer(
             text: ' Needed Blood plasma',

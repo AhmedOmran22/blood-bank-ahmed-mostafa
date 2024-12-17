@@ -20,7 +20,7 @@ class RegisterOrLoginViewBody extends StatelessWidget {
           Text(
             'Donate Blood',
             textAlign: TextAlign.center,
-            style: TextStyles.interSemiBold24,
+            style: TextStyles.interSemiBold20,
           ),
           const SizedBox(height: 16),
           Padding(

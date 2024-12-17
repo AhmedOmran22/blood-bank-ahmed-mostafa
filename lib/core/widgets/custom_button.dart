@@ -9,7 +9,8 @@ class CustomButton extends StatelessWidget {
     required this.onPressed,
     required this.text,
     this.backgroundColor = AppColors.primaryColor,
-    this.textColor = Colors.white, this.loadingWidget,
+    this.textColor = Colors.white,
+    this.loadingWidget,
   });
   final VoidCallback onPressed;
   final String text;
@@ -37,7 +38,7 @@ class CustomButton extends StatelessWidget {
           child: loadingWidget ??
               Text(
                 text,
-                style: TextStyles.interSemiBold24.copyWith(
+                style: TextStyles.interSemiBold20.copyWith(
                   color: textColor,
                 ),
               ),

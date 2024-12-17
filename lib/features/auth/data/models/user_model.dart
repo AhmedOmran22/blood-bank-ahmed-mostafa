@@ -1,3 +1,5 @@
+import 'package:firebase_auth/firebase_auth.dart';
+
 class UserModel {
   final String uid;
   final String email;
@@ -35,4 +37,10 @@ class UserModel {
         'birthDate': birthDate,
         'bloodType': bloodType,
       };
+}
+
+class Appuser 
+{
+  late User user;
+  
 }

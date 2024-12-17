@@ -15,7 +15,7 @@ class ForgetPasswordView extends StatelessWidget {
         surfaceTintColor: Colors.white,
         title: Text(
           AppTexts.forgetPassword,
-          style: TextStyles.interSemiBold24.copyWith(
+          style: TextStyles.interSemiBold20.copyWith(
             fontSize: 22,
             fontWeight: FontWeight.w500,
           ),

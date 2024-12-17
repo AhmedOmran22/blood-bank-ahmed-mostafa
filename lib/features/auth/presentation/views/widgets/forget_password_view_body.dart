@@ -35,7 +35,7 @@ class ForgetPasswordViewBody extends StatelessWidget {
               alignment: Alignment.centerLeft,
               child: Text(
                 AppTexts.enterYourEmail,
-                style: TextStyles.interSemiBold24.copyWith(
+                style: TextStyles.interSemiBold20.copyWith(
                   fontSize: 20,
                   fontWeight: FontWeight.w500,
                 ),

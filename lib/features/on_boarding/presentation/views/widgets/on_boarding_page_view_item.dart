@@ -23,7 +23,7 @@ class OnBoardingPageViewItem extends StatelessWidget {
         Text(
           title,
           textAlign: TextAlign.center,
-          style: TextStyles.interSemiBold24,
+          style: TextStyles.interSemiBold20,
         ),
         const SizedBox(height: 16),
         Padding(
