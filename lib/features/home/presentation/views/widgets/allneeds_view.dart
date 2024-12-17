@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:graduation_project/core/routes/routes_name.dart';
 import 'package:graduation_project/core/widgets/custom_allneeds_container.dart';
+import 'package:graduation_project/core/widgets/custom_drawer.dart';
 import 'package:graduation_project/features/home/presentation/views/widgets/custom_floating_action_button.dart';
 
 class AllneedsView extends StatelessWidget {
@@ -9,6 +10,7 @@ class AllneedsView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: const CustomDrawer(),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
